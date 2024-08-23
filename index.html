@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    link
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <img src="images/logo4.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services-section">Services</a></li> <!-- Updated link to Services -->
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container header-container">
+        <div class="header-text">
+            <h1>Hi! I am Aizel Joy <br>Lopez</h1>
+            <h2>Aspiring <span class="typing">Web Developer</span></h2>
+            <div class="action-btns">
+                <a href="#contact-me">
+                    <button class="hire-me">Hire Me</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="https://github.com/Aizel02/Portfolio.git" target="_blank" rel="noopener noreferrer">
+            <img src="images/github-logo-24.png" alt="GitHub">
+        </a>
+        <a href="https://www.facebook.com/tambebesss?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+            <img src="images/facebook-circle-logo-24.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/tambibsss?igsh=M2Vpa29sbjRuY2xi" target="_blank" rel="noopener noreferrer">
+            <img src="images/instagram-alt-logo-24.png" alt="Instagram">
+        </a>
+        <a href="https://t.me/Tambibssss" target="_blank" rel="noopener noreferrer">
+            <img src="images/telegram-logo-24.png" alt="Telegram">
+        </a>
+    </div>
+    <div class="image-shape">
+        <img src="images/me3.png" alt="Aizel Joy Lopez">
+    </div>
+    
+    <div id="about">
+        <div class="container about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1.jpg" alt="1">
+                    <img src="images/2.jpg" alt="2">
+                    <img src="images/3.jpeg" alt="3">
+                    <img src="images/5.jpg" alt="5">
+                    <img src="images/7.jpg" alt="7">
+                    <img src="images/6.jpg" alt="6">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>I am Aizel Joy Lopez. Graduated with a Bachelor's degree in Information Technology from the University of Batangas.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('projects')">Projects</p>
+                    </div>
+                    <div id="skills" class="tab-content active-content">
+                        <div class="skill-item">
+                            <img src="images/html5-logo-24.png" alt="HTML5">
+                            <p>HTML <span class="skill-percentage">90%</span></p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/css3-logo-24.png" alt="CSS3">
+                            <p>CSS <span class="skill-percentage">85%</span></p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/mysql.png" alt="MySQL">
+                            <p>MySQL <span class="skill-percentage">90%</span></p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/wordpress-logo-24.png" alt="WordPress">
+                            <p>WordPress <span class="skill-percentage">85%</span></p>
+                        </div>
+                    </div>
+                    <div id="projects" class="tab-content">
+                        <p>This is the list of my projects. Portfolio Website, Capstone Project</p>
+                        <div class="projects-container">
+                            <a href="https://ubinternship.tech/views/index.php" class="project-item" target="_blank">
+                                <img src="images/student-interns.png" alt="Student Interns Project">
+                                <p>Student Interns</p>
+                            </a>
+                            <a href="https://ubinternship.tech/views/officer/index.php" class="project-item" target="_blank">
+                                <img src="images/officer.png" alt="Officer Project" >
+                                <p>Internship Adviser and Internship Coordinator</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Popup Modal for Skill Info -->
+                    <div id="skillModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn" onclick="closeModal()">&times;</span>
+                            <h2 id="skillTitle"></h2>
+                            <p id="skillDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Services Section -->
+<div id="services-section">
+    <div class="container services-container">
+        <h2 class="sub-title">My Services</h2   >
+
+        <div class="services-list">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Web Development</h2>
+                        <p>I can build websites and showcase them live on GitHub. Please refer to the example project provided for details. </p>
+                        <span class="arrow">&#10140;</span> 
+                    </div>
+                    <div class="flip-card-back">
+                        <a href="https://ubinternship.tech/views/index.php" target="_blank">
+                            <img src="images/student-interns.png" alt="Web Development" style="width:300px;height:300px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>Database Management</h2>
+                        <p>I design and manage databases, ensuring data integrity and security  of the websites. Please refer to the example project provided for details.</p>
+                        <span class="arrow">&#10140;</span> 
+                    </div>
+                    <div class="flip-card-back">
+                        <a href="https://ubinternship.tech/views/officer/index.php" target="_blank">
+                            <img src="images/officer.png" alt="Database Management" style="width:300px;height:300px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h2>WordPress Development</h2>
+                        <p>I create and customize WordPress themes and plugins. Please refer to the example picture provided for details.</p> 
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="images/portfolio.png" alt="WordPress Development" style="width:300px;height:300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-me"></div>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch </h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="803b31f7-2fe8-432f-be5b-c2c88edbaff5">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src="images/right-arrow-alt-regular-24.png" alt=""> </button>
+            </form>
+            <div class="contact-right">
+                <img src="images/Untitled_design__3_-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const text = document.querySelector('.typing');
+            const textContent = text.textContent;
+            text.textContent = '';
+            let i = 0;
+            const typingSpeed = 50;
+            backSpeed = 50;
+
+            function type() {
+                if (i < textContent.length) {
+                    text.textContent += textContent.charAt(i);
+                    i++;
+                    setTimeout(type, typingSpeed);
+                }
+            }
+
+            type();
+        });
+
+        function openTab(tabName) {
+    const tabLinks = document.querySelectorAll('.tab-links');
+    tabLinks.forEach(link => {
+        link.classList.remove('active-link');
+    });
+
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active-content');
+    });
+
+    document.querySelector(`[onclick="openTab('${tabName}')"]`).classList.add('active-link');
+    document.getElementById(tabName).classList.add('active-content');
+}
+
+function showSkillInfo(title, description) {
+    document.getElementById('skillTitle').innerText = title;
+    document.getElementById('skillDescription').innerText = description;
+    document.getElementById('skillModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('skillModal').style.display = 'none';
+}
+
+    </script>
+</body>
+</html>
